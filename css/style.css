@@ -1,0 +1,490 @@
+/* libre-franklin-regular - latin */
+@font-face {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/libre-franklin-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/libre-franklin-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/libre-franklin-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/libre-franklin-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/libre-franklin-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/libre-franklin-v13-latin-regular.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  }
+  /* libre-franklin-600 - latin */
+  @font-face {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/libre-franklin-v13-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/libre-franklin-v13-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/libre-franklin-v13-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/libre-franklin-v13-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/libre-franklin-v13-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/libre-franklin-v13-latin-600.svg#LibreFranklin') format('svg'); /* Legacy iOS */
+  }
+  
+  html {
+    box-sizing: border-box;
+    
+  }
+  *,*::before, *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .wrapper {
+    /* max-width: 1109px; */
+    margin: 0 auto;
+    padding: 0 165px;
+    
+  }
+  
+    /* header styles starts */
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 93px;
+    
+  }
+  
+  .header_wrapper {
+    display: flex;
+    flex-wrap: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .header_logo_link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+
+  .header_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header_logo{
+    padding-right: 50px;
+  }
+  .header_item {
+    margin-right: 60px;
+  }
+  .header_item:last-child {
+     margin-right: 0;
+  }
+
+  .header_item:first-child{
+    font-weight: 700;
+  }
+
+  .header_link{
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .header_link:hover {
+    color: #dddddd;
+  }
+  .header_burger {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: none;
+  }
+  .burger_line {
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+  }
+  .burger_line_first {
+    top: 6px;
+  }
+  .burger_line_second {
+    top: 12px;
+  }
+  .burger_line_third {
+    top: 18px;
+  }
+
+  /* header styles end */
+
+  /* intro styles start */
+   .intro {
+    min-height: 768px;
+    background: url(/src/Background.jpg) no-repeat center;
+    background-position-x: 0;
+    background-position-y: 0;
+    padding-top: 267px;
+    background-size: cover;
+    margin-bottom: 93px;
+
+   }
+   .intro_title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 78px;
+    color: #fff;
+    max-width: 694px;
+    margin-bottom: 26px;
+   }
+   .intro_subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 106px;
+   }
+   .intro_link {
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin-bottom: 333px;
+   }
+  /* intro styles end */
+
+   /* about styles start */
+   .about_title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 76px;
+   }
+   .about_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: #333333;
+    margin-bottom: 115px;
+   }
+   /* about styles end */
+
+   /* skills styles start */
+   .skills{
+    background: #FFFAF2;
+    margin-bottom: 93px;
+   }
+   .skills_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 86px;
+    padding-top: 93px;
+   }
+   .skills_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+   }
+   .skills_pic {
+    margin-bottom: 145px;
+   }
+   .skills_table{
+    table-layout: fixed;
+    width: 635px;
+    height: 340px;
+    border: 2px solid #0000;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+   }
+    .skills_table_header{ 
+    margin-bottom: 65px;
+    text-align: left; 
+    padding-bottom: 10px;
+   }
+   .skills_table_header:nth-child(1){
+    font-weight: 600;
+    width: 185px;
+    
+   }
+    .skills_table_data {
+      text-align: left;
+      width: 185px;
+    }
+    .skills_table_data:nth-child(1){
+      font-weight: 600;
+    }
+   /* skills styles end */
+
+   /* portfolio styles start */
+    .portfolio_header {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #333333;
+      margin-bottom: 86px;
+    }
+    .portfolio_subheader {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: #333333;
+      margin-bottom: 48px;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 145px;
+      flex-wrap: wrap;
+      
+
+      /* display: grid;
+      grid-template-columns: repeat(auto-fit,125px);
+      column-gap: 125px;
+      justify-content: space-between;
+      margin-bottom: 145px; */
+      
+
+    }
+    .content_text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: justify;
+      color: #333333;
+      width: 349px;
+      height: 137px;
+    }
+    .content_pics {
+      max-width: 635px;
+      max-height: 403px;
+      display: grid;
+      grid-template-columns: 350px 255px;
+      grid-template-rows: 140px;
+      gap: 30px;
+      justify-content: space-between;
+    }
+    
+    .content_text_text {
+      margin-bottom: 235px;
+    }
+    .left_chevron {
+      padding-right: 14px;
+    }
+    
+   /* portfolio styles end */
+    
+   /* footer start */
+    .footer {
+      background: #FFFAF2;
+      height: 528px ;
+    }
+    .footer_title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      padding-top: 93px;
+      margin-bottom: 51px;
+    }
+    .footer_menu_item{
+      margin-bottom: 14px;
+    }
+    .footer_menu_link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #333333;
+    }
+    .footer_menu_link:hover {
+      color: #C66C49;
+    }
+    .footer_menu {
+      padding-right: 20px;
+    }
+    .footer_nav {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 189px;
+      padding-right: 182px;
+      flex-wrap: flex;
+    }
+
+   /* footer end */
+  
+   /* media start */
+   @media screen and (max-width: 1019px) {
+    .wrapper {
+      padding: 0 34px;
+
+    }
+    .about_text {
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+    .about_title {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .intro {
+      margin-bottom: 30px;
+    }
+    .skills {
+      margin-bottom: 30px;
+    }
+    .skills_title {
+      margin-bottom: 40px;
+      padding-top: 30px;
+      text-align: center;
+    }
+    .skills_wrapper {
+      justify-content: center;
+    }
+    .skills_pic {
+      margin-bottom: 50px;
+    }
+    .portfolio_header {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .portfolio_subheader {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .content {
+      justify-content: center;
+      padding-bottom: 50px;
+      margin-bottom: 30px;
+      
+    }
+    .content_text {
+      text-align: center;
+      width: 635px;
+      height: auto;
+      
+    }
+    .content_text_text {
+      margin-bottom: 30px;
+    }
+    .portfolio {
+      position: relative;
+    }
+    .arrow {
+      position:absolute;
+      bottom: 0;
+      
+    }
+    .footer_title {
+      padding-top: 50px;
+      text-align: center;
+    }
+    .footer_nav {
+      justify-content: space-around;
+      padding: 0;
+
+    }
+    .footer_nav {
+      margin-bottom: 50px;
+    }
+    .footer {
+      height: 450px;
+    }
+    
+
+   }
+@media screen and (max-width: 767px) {
+  .header_burger {
+    display: block;
+  }
+  .header_wrapper {
+    margin-bottom: 50px;
+    flex-direction: row-reverse;
+    justify-content: baseline;
+  }
+  
+  .intro {
+    padding-top: 115px;
+
+  }
+  .intro_title {
+    font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+  }
+  .wrapper {
+    padding: 0 34px;
+  }
+  .header_nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #333333;
+    z-index: 10;
+    padding: 75px;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+  .header_nav_active {
+    transform: translateX(0);
+  }
+  .header_item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .header_link {
+    font-size: 42px;
+    line-height: 48px;
+   
+  }
+  .header_nav_close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+  .header_nav_close_line {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .header_nav_close_line:last-child {
+   transform: translateY(-50%) rotate(45deg);
+  }
+  .header_nav_close_line:first-child {
+    transform: translateY(-50%) rotate(-45deg);
+   }
+ 
+}
+
+   /* media end */
