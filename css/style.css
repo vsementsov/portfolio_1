@@ -358,6 +358,7 @@
     }
     .intro {
       margin-bottom: 30px;
+      min-height: 275px;
     }
     .skills {
       margin-bottom: 30px;
@@ -422,7 +423,7 @@
     
 
    }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 412px) {
   .header_burger {
     display: block;
   }
@@ -431,20 +432,41 @@
     flex-direction: row-reverse;
     /* justify-content: ; */
   }
-  
+  .header {
+    padding-top: 36px;
+  }
   .intro {
     padding-top: 115px;
+    padding-bottom: 25px;
 
   }
+  .intro_subtitle {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 41px;
+  }
+
+  .intro_link {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 0;
+    
+  }
+
   .intro_title {
     font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13px;
   }
   .wrapper {
     padding: 0 33px;
+    text-align: center;
   }
   .header_nav {
     position: absolute;
@@ -496,6 +518,59 @@ align-items: center;
   .header_nav_close_line:first-child {
     transform: translateY(-50%) rotate(-45deg);
    }
+   .about_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+   }
+   .about_text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+   }
+   .skills_title {
+    font-weight: 600;
+    padding-top: 25px;
+    margin-bottom: 25px;
+   }
+   .skills_pic {
+    max-width: 224px;
+    max-height: 218px;
+    margin-bottom: 26px;
+   }
+   .skills_table {
+    table-layout:fixed;
+    width: 308px;
+    height: none;
+    border: 2px solid #0000;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  
+  .bar {
+    width: 211px;
+    height: 18px;
+    background-color: #F5D6AB; 
+    /* position: absolute; */
+    
+    
+  }
+  .skills_table_data {
+    align-items: left;
+    vertical-align: middle;
+    position: relative;
+  }
+  .skills_table_data:nth-child(1){
+    width: 90px;
+  
+  }
+  .skills_table_header:nth-child(1){
+    width: 90px;
+    
+  }
    .content_pics {
     max-width: 308px;
     max-height: 195px;
