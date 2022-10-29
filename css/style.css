@@ -382,7 +382,7 @@
    /* footer end */
   
    /* media start */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 820px) {
   .header_burger {
     display: block;
     }
@@ -539,8 +539,8 @@
   }
 .header_wrapper {
   margin-bottom: 50px;
-  flex-direction: row-reverse;
-    /* justify-content: ; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   }
 .header {
   padding-top: 36px;
@@ -619,8 +619,12 @@
   width: 100%;
   }
 .header_logo {
-  left: 50% ;
+  padding-right: 0;
+  order: 1;
   }
+.header_burger {
+  order: 0;
+}
 .header_nav_close_line:last-child {
   transform: translateY(-50%) rotate(45deg);
   }
