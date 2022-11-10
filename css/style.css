@@ -32,13 +32,16 @@
   *,*::before, *::after {
     box-sizing: inherit;
   }
-
+  
   body {
     font-family: 'Libre Franklin';
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
     font-weight: normal;
+    min-width: 1024px;
+    position: relative;
+    
   }
   img {
     max-width: 100%;
@@ -49,9 +52,12 @@
   }
 
   .wrapper {
-    /* max-width: 1109px; */
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 165px;
+    min-width: 320px;
+    /* max-width: ; */
+   
     
   }
   
@@ -83,7 +89,7 @@
 
   .header_list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .header_logo{
     padding-right: 50px;
@@ -144,6 +150,7 @@
     padding-top: 267px;
     background-size: cover;
     margin-bottom: 93px;
+    min-width: 320px;
 
    }
    .intro_title {
@@ -343,6 +350,7 @@
       background: #FFFAF2;
       height: 528px ;
       position: relative;
+      /* width: 100%; */
     }
     .footer_title {
       font-weight: 700;
@@ -383,6 +391,9 @@
   
    /* media start */
 @media screen and (max-width: 820px) {
+  body {
+    min-width: 720px;
+  }
   .header_burger {
     display: block;
     }
@@ -403,7 +414,8 @@
     }
   .header_wrapper {
     margin-bottom: 50px;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     }
   .header_nav {
       display: none;
@@ -448,7 +460,11 @@
       width: 100%;
       }
     .header_logo {
-      left: 50% ;
+      padding-right: 0;
+      order: 3;
+      }
+      .burger {
+        order: 0;
       }
     .header_nav_close_line:last-child {
       transform: translateY(-50%) rotate(45deg);
@@ -501,6 +517,16 @@
   margin-bottom: 30px;
       
     }
+/* .content_pics {
+  max-width: 635px;
+  max-height: 403px;
+  display: grid;
+  grid-template-columns: 350px 255px; 
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 144px;
+  gap: 30px;
+  justify-content: space-between;
+      } */
 .content_text {
   text-align: center;
   width: 635px;
@@ -534,6 +560,9 @@
     }
  }
 @media screen and (max-width: 425px) {
+body {
+  min-width: 320px;
+}
 .header_burger {
   display: block;
   }
@@ -548,7 +577,7 @@
 .intro {
   padding-top: 115px;
   padding-bottom: 25px;
-  min-height: 275px;
+  /* min-height: 275px; */
 
   }
 .intro_subtitle {
